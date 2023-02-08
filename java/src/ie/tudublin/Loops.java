@@ -23,7 +23,7 @@ public class Loops extends PApplet {
 
 	public void draw() {
 		background(0);
-		fill(255);
+		fill(180, 100, 100);
 
 		switch(mode)
 		{
@@ -31,12 +31,10 @@ public class Loops extends PApplet {
 			{
 				if(mouseX > width/4 && mouseX < width/2)
 				{
-					fill(180, 100, 100);
 					rect(width/4, 0, width/4, height);
 				}		
 				else if(mouseX > width/2 && mouseX < (width*.75))
 				{
-					fill(180, 100, 100);
 					rect(width/2, 0, width/4, height);
 				}
 				break;
@@ -45,17 +43,33 @@ public class Loops extends PApplet {
 			{
 				if(mouseX > width/4 && mouseX < width/2 && mouseY < height/2)
 				{
-					fill(180, 100, 100);
 					rect(width/4, 0, width/4, height/2);
 				}		
 				else if(mouseX > width/2 && mouseX < (width*.75) && mouseY < height/2)
 				{
-					fill(180, 100, 100);
 					rect(width/2, 0, width/4, height/2);
 				}
+				else if(mouseX > width/4 && mouseX < width/2 && mouseY > height/2)
+				{
+					rect(width/4, height/2, width/4, height/2);
+				}	
+				else if(mouseX > width/2 && mouseX < (width*.75) && mouseY > height/2)
+				{
+					rect(width/2, height/2, width/4, height/2);
+				}	
 				break;
-
 			}//end 1
+			case 2:
+			{
+				fill(180, 100, 100);
+				rect(375, 400, width/4, height/8);
+				if(mouseX > 375 && mouseX < 375 + width/4 && mouseY > 400 && mouseY < 400 + height/8 )
+				{
+					fill(0, 100, 100);
+					rect(375, 400, width/4, height/8);
+				}
+
+			}//end 2
 
 
 		}
