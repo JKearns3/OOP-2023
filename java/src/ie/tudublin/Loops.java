@@ -7,7 +7,7 @@ public class Loops extends PApplet {
 	int mode = 0;
 	int color = 0;
 	public void settings() {
-		size(1000, 1000);
+		size(500, 500);
 	}
 
 	public void setup() {
@@ -28,8 +28,8 @@ public class Loops extends PApplet {
 
 		for(int i=0; i < 10; i++)
 		{
-			fill(color + (i * 25), 100, 100);
-			rect(i*(width/10), 0, width/10, height);
+			fill(color + (i * 35), 100, 100);
+			rect(i*(width/10), (i * height/10), width/10, height/10);
 		}		
 
 	}
