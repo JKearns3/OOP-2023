@@ -30,7 +30,10 @@ public class Loops extends PApplet {
 		{
 			fill(color + (i * 35), 100, 100);
 			rect(i*(width/10), (i * height/10), width/10, height/10);
+			rect(width-(i*(width/10)), (i * height/10), -width/10, height/10);
+
 		}		
+
 
 	}
 }
