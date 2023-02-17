@@ -1,6 +1,7 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import java.lang.Math;
 
 public class Loops extends PApplet {
 
@@ -24,19 +25,16 @@ public class Loops extends PApplet {
 
 	public void draw() {
 		background(0, 0, 100);
-		noStroke();
 
-		for(int i=0; i < 10; i++)
+		for(int i = 0; i<5; i++)
 		{
-			//fill((i * 25), 100, 100);
-			for(int k=0; k < 10; k++)
-			{
-				fill((i * 13 + k * 13), 100, 100);
-				ellipse(width/20 + i*width/10, height/20 + k*height/10, width/10, height/10); //(center x, center y, width, height)
-			}
-			//ellipse(width/20 + i*width/10, height/10, width/10, height/10);
+			int x1 = 250;
+			int y1 = 250;
+			double x2 = x1 + (Math.cos((i+1)*108)*100);
+			double y2 = y1 + (Math.sin((i+1)*108)*100);
 
-		}		
+			line(x1, y1, (int)x2, (int)y2);
 
+		}
 	}
 }
