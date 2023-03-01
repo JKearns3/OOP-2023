@@ -39,6 +39,12 @@ public class Main
         processing.core.PApplet.runSketch( a, new Audio2());
     }
 
+	public static void psaudio()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new psAudio());
+    }
+
 	
 	public static void main(String[] args)
 	{
@@ -51,6 +57,7 @@ public class Main
 		//audio1();
 		//starMap();
 		//audio2();
+		psaudio();
 		
 		PitchSpeller ps = new PitchSpeller();
         System.out.println(ps.spell(330));
