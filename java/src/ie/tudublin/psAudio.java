@@ -30,6 +30,7 @@ public class psAudio extends PApplet{
         lerpedBuffer = new float[width];
 
         fft = new FFT(width, 44100);
+        colorMode(HSB, 360, 100, 100);
     }
 
     float[] lerpedBuffer;
@@ -49,6 +50,7 @@ public class psAudio extends PApplet{
             {
                 highestIndex = i;
             }
+                        
         }
 
         float freq = fft.indexToFreq(highestIndex);
@@ -61,24 +63,14 @@ public class psAudio extends PApplet{
 
         float r = map(freq, 100.0f, 2500.0f, height, 0);
         lerpedR = lerp(lerpedR, r, 0.1f);
-        circle(width/4, height/2, r/10);
-        circle(width - width/4, height/2, lerpedR/10);
-        
+        float c = map(freq, 0, ab.size(), 0, 255);
+        fill(c, 100, 100);
+        circle(width/4, height/2, r/5);
+        circle(width - width/4, height/2, lerpedR/5);
+ 
 
-
-
-        //println(map(5, 2, 10, 1000, 2000));
-        //println(map1(5, 2, 10, 1000, 2000));
     }
 
     float lerpedR = 0;
-    
-    float map1(float a, float b, float c, float d, float e)
-    {
-        float range1 = c - b;
-        float range2 = e - d;
-        float howFar = a - b;
-
-        return d + (howFar / range1) * range2;
-    }
+ 
 }
