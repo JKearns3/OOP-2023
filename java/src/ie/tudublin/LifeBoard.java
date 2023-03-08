@@ -32,7 +32,7 @@ public class LifeBoard {
             {
                 if (! (i == 0) && (j == 0))
                 {
-                    if (getCell(i, j))
+                    if (getCell(row+i, col+j))
                     {
                         count ++;
                     }
@@ -78,7 +78,8 @@ public class LifeBoard {
                 // dead with 3 neighboiurs comes to life
             }
         }
-        boolean[][] temp = board;
+        boolean[][] temp;
+        temp = board;
         board = next;
         next = temp;
     }
@@ -98,8 +99,8 @@ public class LifeBoard {
         {
             for (int col = 0 ; col < size ; col ++)
             {
-                float dice = p.random(0, 1);
-                board[row][col] = (dice <= 0.5f);
+                float dice = p.random(0, 10);
+                board[row][col] = (dice <= 5);
             }
         }
     }
