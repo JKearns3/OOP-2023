@@ -1,0 +1,35 @@
+package ie.tudublin;
+
+import processing.core.PApplet;
+
+public class YASC extends PApplet
+{
+
+	Ship ship;
+	Ship ship1;
+
+
+	public void settings()
+	{
+		size(500, 500);
+	}
+
+
+	public void setup() {
+		colorMode(HSB);
+		ship = new Ship(width/2, height/2, 50, 70, this);
+		ship = new Ship(100, 50, 80, 16, this);
+		
+	}
+
+	
+	
+	public void draw()
+	{	
+		background(0);
+		ship.render();
+		ship.move();
+		ship1.render();
+		ship1.move();
+	}
+}
