@@ -65,12 +65,7 @@ public class Main
 		penny.setName("Penny");
 		penny.speak();
 
-<<<<<<< HEAD
-		//audio1();
-		starMap();
-=======
 		life();
->>>>>>> 44b46f78b67684c08ae612f4dc0d0d719be21c5d
 	}
 	
 }
