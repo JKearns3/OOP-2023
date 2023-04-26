@@ -56,13 +56,19 @@ public class Main
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new YASC());
     }
+
+	public static void nemVis()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new NematodeVisualiser());
+    }
 	
 	public static void main(String[] args)
 	{
 		System.out.println("Hello world");
 		
 
-		yasc();
+		nemVis();
 	}
 	
 }
