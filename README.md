@@ -26,7 +26,7 @@ Resources
 
 - Week 5 - Teams Submission
 - 26 April - Lab Test 20% 
-- 4 May Assignment Submission - 30%
+- 25 April Assignment Submission - 30%
 - End of Year exam - 50%
 
 # Last years course
@@ -41,6 +41,26 @@ Resources
 - https://github.com/skooter500/OOP-2018-Lab-Test-2
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-
+
+# Week 11 - GameObjects & Polymorphism. Also trails!!
+- [Recording of the class](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/ERXADIzHDzFBofCMgjVIX3sBE7rKQIZEvXnDqh2m1tK2lQ?e=fOgsDF)
+
+# Week 10 - Bullet class, ArrayList
+We added bullet firing and getting removed when the bullets go offscreen. We explored a limitation of the for-each loop
+- [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/EeLy5Kfu281DoiBM-QYCH6oB47P7SJO-7H4nGFJeBxOJbw?e=WRAldo)
+
+## Lab
+Update your forks!
+
+For some good practice, try implementing these challenges:
+
+- Implement a fire rate, so that the number of Bullets each player can fire per second is limited and can be modified.
+- Implement Bullet and Player wrap around, so that bullets and players wrap around the screen
+- Implement Bullet "time-to-live" so that bullets survive for 5 seconds and then get removed. 
+- Implement Bullet "fade-out" so that Bullets fade out before they get removed
+- Refactor the code so that Bullet and Player extend a common super class 
+
+Alternatively! - Work on your assignments
 
 # Week 9 - YASC Part 1 - Encapsulation, transforms
 - [Recording](https://tudublin-my.sharepoint.com/:v:/g/personal/bryan_duggan_tudublin_ie/ESDnglyD6EJMv558Z-8uqTIBB189eEicCP_nl_BloHH7Ag?e=kTwgN6)
