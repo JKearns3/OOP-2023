@@ -14,6 +14,7 @@ public class StarMap extends PApplet {
 
     public void setup()
     {
+        colorMode(RGB);
         loadData();
         printStars();
     }
@@ -41,10 +42,23 @@ public class StarMap extends PApplet {
             stars.add(s);
         }
     }
+    int border = 50;
+    public void drawGrid()
+    {
+        stroke(255, 0, 255);
+        textAlign(CENTER, CENTER);
+        for(int i = -5; i<=5; i++)
+        {
+            float x = map(i, -5, 5, border, width - border);
+            line(x,  border, x, height - border); //vertical
+            line(border, x, width - border, x); //horizontal
+        }
+    }
 
     public void draw()
     {
-        
+        background(0);
+        drawGrid();
     }
 
     
